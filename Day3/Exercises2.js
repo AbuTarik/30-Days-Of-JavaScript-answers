@@ -1,4 +1,6 @@
-// // 1 
+const now = new Date()
+
+// 1 
 let x = prompt('Enter base:')
 let y = prompt('Enter height:')
 
@@ -8,7 +10,7 @@ y = Number(y)
 let triangle = x * y * 0.5 ;
 alert(triangle)
 
-// // 2
+// 2
 let a = prompt('Enter a side')
 let b = prompt('Enter b side')
 let c = prompt('Enter c side')
@@ -56,11 +58,11 @@ slope1 > slope2
 
 // 8  
 let x = 1;
-let y = x**2  + 6*x + 3**2;
+let y = x**2  + 6*x + 9;
 if (y == 0) console.log("y = 0 at x = ", x);
 
 x = -3;
-y = x**2  + 6*x + 3**2;
+y = x**2  + 6*x + 9;
 if (y == 0) console.log("y = 0 at x = ", x);
 
 // 9 
@@ -96,20 +98,17 @@ myAge > yourAge
 // 13 
 let birth = prompt(`Enter you birth year`)
 birth=Number(birth)
-let young = 18 - birth 
+let young = now.getFullYear() - birth
 
-birth >= 18
-? console.log(`You are ${birth}. You are old enought to drive`)
-: console.log(`You are ${birth}. You will be allowed to drive after ${young} years`)
+young >= 18
+? console.log(`You are ${young}. You are old enought to drive`)
+: console.log(`You are ${young}. You will be allowed to drive after ${18 - young} years`)
 
 // 14
 let yrsLived = Number(prompt("Enter number of years you live: "));
 console.log(`You lived ${yrsLived * 31536000} seconds!`);
 
 // 15
-const now = new Date()
-
-
 let mins = now.getMinutes();
 let hrs  = now.getHours();
 let year = now.getFullYear();
